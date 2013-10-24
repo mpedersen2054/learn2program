@@ -1,3 +1,5 @@
-= Completed Assignments
-== From Chris Pine's Learn 2 Program
-=== Chapters 1-9
+Chapter 1-9 Completed Assignments
+=================================
+
+Learn to Program, Chris Pine
+----------------------------
