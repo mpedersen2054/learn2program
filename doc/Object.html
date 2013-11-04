@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Object - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>improvedaskmethod.rb
+    <li>modern_roman.rb
+    <li>oldschool_roman.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">BasicObject
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-ask">#ask</a>
+    
+    <li><a href="#method-i-roman">#roman</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Object.html">Object</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Object</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-ask" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ask</span><span
+            class="method-args">(question)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="ask-source">
+            <pre><span class="ruby-comment"># File improvedaskmethod.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ask</span> <span class="ruby-identifier">question</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">question</span>
+        <span class="ruby-identifier">reply</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">downcase</span>
+
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">reply</span> <span class="ruby-operator">!=</span> <span class="ruby-string">'yes'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">reply</span> <span class="ruby-operator">!=</span> <span class="ruby-string">'no'</span>
+                <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;please answer 'yes' or 'no' &quot;</span>
+
+                <span class="ruby-identifier">puts</span> <span class="ruby-identifier">question</span>
+                <span class="ruby-identifier">reply</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">downcase</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">reply</span> <span class="ruby-operator">==</span> <span class="ruby-string">'yes'</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ask-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ask-method -->
+
+    
+      <div id="method-i-roman" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">roman</span><span
+            class="method-args">(number)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="roman-source">
+            <pre><span class="ruby-comment"># File modern_roman.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">roman</span> <span class="ruby-identifier">number</span>
+
+        <span class="ruby-identifier">m_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">n900_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">d_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">n400_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">c_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">n90_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">l_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">n40_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">x_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">n9_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">v_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">n4_length</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">i_length</span> = <span class="ruby-value">0</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">1000</span>
+        <span class="ruby-identifier">m_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">1000</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">1000</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">900</span>
+        <span class="ruby-identifier">n900_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">900</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">900</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">500</span>
+        <span class="ruby-identifier">d_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">500</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">500</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">400</span>
+        <span class="ruby-identifier">n400_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">400</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">400</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">100</span>
+        <span class="ruby-identifier">c_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">100</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">100</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">90</span>
+        <span class="ruby-identifier">n90_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">90</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">90</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">50</span>
+        <span class="ruby-identifier">l_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">50</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">50</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">40</span>
+        <span class="ruby-identifier">n40_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">40</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">40</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">10</span>
+        <span class="ruby-identifier">x_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">10</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">10</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">9</span>
+        <span class="ruby-identifier">n9_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">9</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">9</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">5</span>
+        <span class="ruby-identifier">v_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">5</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">5</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">4</span>
+        <span class="ruby-identifier">n4_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">4</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">4</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">4</span>
+        <span class="ruby-identifier">i_length</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">/</span><span class="ruby-value">1</span>
+        <span class="ruby-identifier">number</span> = <span class="ruby-identifier">number</span><span class="ruby-operator">%</span><span class="ruby-value">10</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">'M'</span> * <span class="ruby-identifier">m_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;CM&quot;</span> * <span class="ruby-identifier">n900_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'D'</span> * <span class="ruby-identifier">d_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'CD'</span> * <span class="ruby-identifier">n400_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'C'</span> * <span class="ruby-identifier">c_length</span> <span class="ruby-operator">+</span>
+        <span class="ruby-string">'XC'</span> * <span class="ruby-identifier">n90_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'L'</span> * <span class="ruby-identifier">l_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'XL'</span> * <span class="ruby-identifier">n40_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'X'</span> * <span class="ruby-identifier">x_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'IX'</span> * <span class="ruby-identifier">n9_length</span> <span class="ruby-operator">+</span>
+        <span class="ruby-string">'V'</span> * <span class="ruby-identifier">v_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'IV'</span> * <span class="ruby-identifier">n4_length</span> <span class="ruby-operator">+</span> <span class="ruby-string">'I'</span> * <span class="ruby-identifier">i_length</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- roman-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- roman-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
